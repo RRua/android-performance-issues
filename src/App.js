@@ -15,7 +15,7 @@ function App() {
     const loadData = async () => {
       try {
         setLoading(true);
-        const data = await fetchCsvData('/data/performance_issues_list.csv');
+        const data = await fetchCsvData('public/data/performance_issues_list.csv');
         setIssues(data);
         setLoading(false);
       } catch (err) {
