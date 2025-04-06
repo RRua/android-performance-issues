@@ -1,0 +1,187 @@
+.issue-detail-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .issue-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--light-text);
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+  
+  .back-button:hover {
+    color: var(--primary-color);
+  }
+  
+  .issue-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+  }
+  
+  .issue-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category-badge, .android-badge, .severity-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .category-badge {
+    background-color: #e8f0fe;
+    color: var(--primary-color);
+  }
+  
+  .android-badge {
+    background-color: #e6f4ea;
+    color: var(--secondary-color);
+  }
+  
+  .severity-badge {
+    background-color: #fef6e0;
+    color: #f9ab00;
+  }
+  
+  /* Tabs */
+  .tabs-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #f8f9fa;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--light-text);
+    transition: all 0.2s;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .tabs button:hover {
+    background-color: #f1f3f4;
+  }
+  
+  .tabs button.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  .tab-content {
+    padding: 30px;
+  }
+  
+  .tab-content h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-size: 1.5rem;
+  }
+  
+  .tab-content h3 {
+    margin: 25px 0 10px;
+    color: var(--light-text);
+    font-size: 1.2rem;
+  }
+  
+  .no-content {
+    color: var(--light-text);
+    font-style: italic;
+  }
+  
+  /* Explanation tab */
+  .explanation-tab p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .sample-link {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+  }
+  
+  .sample-link a {
+    word-break: break-all;
+  }
+  
+  /* Code examples tab */
+  .code-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .code-example h3 {
+    margin-bottom: 10px;
+  }
+  
+  pre {
+    margin: 0 !important;
+    border-radius: 6px;
+    max-height: 500px;
+    overflow: auto;
+  }
+  
+  /* Detection tools tab */
+  .detection-tools-list ul {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  .detection-tools-list li {
+    margin-bottom: 8px;
+  }
+  
+  .kotlin-support {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #7F52FF; /* Kotlin color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .issue-header h1 {
+      font-size: 1.8rem;
+    }
+    
+    .tabs {
+      flex-wrap: wrap;
+    }
+    
+    .tabs button {
+      flex-basis: 50%;
+    }
+    
+    .tab-content {
+      padding: 20px 15px;
+    }
+  }
