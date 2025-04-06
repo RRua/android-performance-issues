@@ -57,7 +57,7 @@ export const fetchCodeExample = async (exampleFileName) => {
   }
   
   try {
-    const response = await fetch(`/android-performance-issues/${exampleFileName}`);
+    const response = await fetch(`/android-performance-issues/data/examples/${exampleFileName}`);
     if (!response.ok) {
       return `Code example could not be loaded (${exampleFileName})`;
     }
